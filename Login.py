@@ -1,7 +1,10 @@
 import requests
-codes = requests.get("https://pastebin.com/yoururl")
+info = requests.get("https://pastebin.com/raw/NGsTFapN")
 username = input("Enter your username: ")
 password = input("Enter your pass: ")
-if username and password in codes.text:
-# Do anything you want 
+if username and password in info.text:
+    print("Do What Ever You Want")
+# code code code
+else:
+    print("Invalid Login Info")
  
